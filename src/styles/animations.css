@@ -1,0 +1,58 @@
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-scroll-pulse {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+.hero-reveal {
+  opacity: 0;
+  animation: hero-fade-up 0.8s ease-out forwards;
+}
+
+.hero-reveal-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.hero-reveal-delay-2 {
+  animation-delay: 0.24s;
+}
+
+.hero-reveal-delay-3 {
+  animation-delay: 0.36s;
+}
+
+.hero-reveal-delay-4 {
+  animation-delay: 0.48s;
+}
+
+.hero-scroll-indicator {
+  animation: hero-scroll-pulse 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-reveal,
+  .hero-scroll-indicator {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
