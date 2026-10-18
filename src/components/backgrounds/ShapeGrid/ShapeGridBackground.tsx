@@ -7,7 +7,7 @@ function ShapeGridBackground() {
       <ShapeGrid
         direction="diagonal"
         speed={0.5}
-        lineColor="rgba(700, 180, 310, 0.20)"
+        lineColor="rgba(180, 180, 210, 0.20)"
         cellSize={100}
         radius={0}
         glow={0}
@@ -15,6 +15,8 @@ function ShapeGridBackground() {
         clickCascade={false}
         intro={false}
         hoverFillColor={false}
+        dpr={1}
+        style={{ width: "100%", height: "100%" }}
       />
     </div>
   );

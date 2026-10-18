@@ -1,96 +1,71 @@
 @import "tailwindcss";
 
-/* ================================
-   Dark theme (default)
-================================ */
-
 :root {
   color-scheme: dark;
 
-  /* Backgrounds */
   --page-bg: #111116;
   --section-bg: #111116;
   --navbar-bg: rgb(17 17 22 / 92%);
 
-  /* Surfaces */
   --surface: #19191f;
   --surface-hover: #222127;
 
-  /* Typography */
   --text-primary: #e6e1d9;
   --text-secondary: #b8b3c2;
   --text-muted: #77717f;
 
-  /* Muted lavender accent */
   --accent: #b6a4d0;
   --accent-hover: #c7b9da;
   --accent-highlight: #b6a4d0;
   --accent-glow: rgb(182 164 208 / 8%);
 
-  /* Navbar and buttons */
   --resume-bg: #19191f;
   --nav-border: rgb(255 255 255 / 10%);
   --nav-active-bg: rgb(182 164 208 / 6%);
   --nav-shadow: rgb(0 0 0 / 25%);
 
-  /* Borders and shadows */
   --border: rgb(255 255 255 / 8%);
   --card-shadow: rgb(0 0 0 / 15%);
   --mouse-glow: transparent;
 }
 
-/* ================================
-   Light theme
-================================ */
 
 :root[data-theme="light"] {
   color-scheme: light;
 
-  /* Backgrounds */
   --page-bg: #f7f6f4;
   --section-bg: #f1efed;
   --navbar-bg: rgb(250 249 247 / 94%);
 
-  /* Surfaces */
   --surface: #ffffff;
   --surface-hover: #eeebf1;
 
-  /* Typography */
   --text-primary: #29262e;
   --text-secondary: #625d69;
   --text-muted: #817b87;
 
-  /* Muted lavender accent */
   --accent: #806b9c;
   --accent-hover: #6d5888;
   --accent-highlight: #806b9c;
   --accent-glow: rgb(128 107 156 / 8%);
 
-  /* Navbar and buttons */
   --resume-bg: #ffffff;
   --nav-border: rgb(41 38 46 / 12%);
   --nav-active-bg: rgb(128 107 156 / 8%);
   --nav-shadow: rgb(0 0 0 / 8%);
-
-  /* Borders and shadows */
   --border: rgb(41 38 46 / 10%);
   --card-shadow: rgb(0 0 0 / 6%);
   --mouse-glow: transparent;
 }
 
-/* ================================
-   Global styles
-================================ */
 
 html {
   scroll-behavior: smooth;
 
-  /* Firefox and older Microsoft browsers */
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
-/* Chrome, Safari, Edge and other WebKit browsers */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
@@ -107,15 +82,11 @@ body {
     color 250ms ease;
 }
 
-/* Text selection */
 ::selection {
   background-color: var(--accent);
   color: #111116;
 }
 
-/* ================================
-   Reusable card
-================================ */
 
 .premium-card {
   border: 1px solid var(--border);
@@ -132,9 +103,6 @@ body {
   transform: translateY(-3px);
 }
 
-/* ================================
-   Primary button
-================================ */
 
 .btn-primary {
   display: inline-flex;
@@ -162,17 +130,12 @@ body {
   outline-offset: 3px;
 }
 
-/* ================================
-   Mouse glow
-================================ */
+
 
 .mouse-glow {
   display: none;
 }
 
-/* ================================
-   Section animation
-================================ */
 
 .section-animate {
   animation: section-enter 700ms cubic-bezier(0.2, 0.65, 0.3, 1) both;
@@ -192,9 +155,6 @@ body {
   }
 }
 
-/* ================================
-   Reduced motion accessibility
-================================ */
 
 @media (prefers-reduced-motion: reduce) {
   *,

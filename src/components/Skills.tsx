@@ -41,7 +41,7 @@ function Skills() {
         </header>
 
         <div className="border-t border-white/[0.10]">
-          {skillGroups.map((group, index) => (
+          {skillGroups.map((group) => (
             <article
               key={group.title}
               className="
